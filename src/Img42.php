@@ -75,6 +75,7 @@ class Img42 implements ImageDriverInterface
 
         $request = $this->buildRequest($binaryImage);
         $this->client->setOption(CURLOPT_BINARYTRANSFER, true);
+        $this->client->setOption(CURLOPT_TIMEOUT, 10000);
         $this->client->send($request, $response);
 
         return $response;
