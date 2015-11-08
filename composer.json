@@ -1,0 +1,32 @@
+{
+    "name": "bex/behat-screenshot-image-driver-img42",
+    "type": "library",
+    "description": "img42.com image driver for bex/behat-screenshot behat extension",
+    "keywords": ["tdd","bdd","behat", "behat-screenshot"],
+    "homepage": "https://github.com/tkotosz/behat-screenshot-image-driver-img42",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tibor Kotosz",
+            "email": "kotosy@gmail.com",
+            "homepage": "https://github.com/tkotosz",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : "^5.4",
+        "behat/behat" : "^3.0.0",
+        "kriswallsmith/buzz": "^0.15.0"
+    },
+    "require-dev": {
+        "phpspec/phpspec" : "^2.3.0"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bex\\Behat\\ScreenshotExtension\\Driver\\": "src"
+        }
+    }
+}
