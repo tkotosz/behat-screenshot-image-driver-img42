@@ -10,7 +10,7 @@ use Buzz\Message\Response;
 class Img42Api
 {
     const REQUEST_URL = 'https://img42.com';
-    const IMAGE_BASE_URL= 'https://img42.com/';
+    const IMAGE_BASE_URL = 'https://img42.com/';
 
     /**
      * @var Curl
@@ -18,7 +18,7 @@ class Img42Api
     private $client;
 
     /**
-     * @param Curl       $client
+     * @param Curl $client
      */
     public function __construct(Curl $client = null)
     {
@@ -27,11 +27,10 @@ class Img42Api
 
     /**
      * @param  string $binaryImage
-     * @param  string $filename
      *
      * @return string
      */
-    public function call($binaryImage, $filename)
+    public function call($binaryImage)
     {
         $response = new Response();
 

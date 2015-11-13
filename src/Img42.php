@@ -49,6 +49,6 @@ class Img42 implements ImageDriverInterface
      */
     public function upload($binaryImage, $filename)
     {
-        return $this->api->call($binaryImage, $filename);
+        return $this->api->call($binaryImage);
     }
 }
